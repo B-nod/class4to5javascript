@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="imagesection my-5 h-[350px] relative">
+        <img src="https://images7.alphacoders.com/546/546508.jpg" alt="everest image" class="object-cover w-full h-full">
+        <button class="left absolute top-[40%] left-5" onclick="pre()">
+            <i class="bi bi-arrow-left-circle-fill text-4xl"></i>
+        </button>
+        <button class="right absolute top-[40%] right-5" onclick="next()">
+            <i class="bi bi-arrow-right-circle-fill text-4xl"></i>
+        </button>
+
+    </div>
+    <script>
+       const next = () => {
+            document.querySelector('img').src = `https://c4.wallpaperflare.com/wallpaper/134/234/391/photography-mountains-snow-landscape-wallpaper-preview.jpg`
+
+        }
+        const pre = () => {
+            document.querySelector('img').src = `https://images7.alphacoders.com/546/546508.jpg`
+
+        }
+    </script>
+</body>
+</html>
