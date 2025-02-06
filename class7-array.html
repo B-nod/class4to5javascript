@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        const planguage = ['python', 'javascript', 'c', 'ruby', 'golang', 'php']
+        document.write(`${planguage} <br>`)
+        document.write(`${planguage.length} <br>`)
+        document.write(`${typeof(planguage)} <br>`)
+        //access
+        document.write(`${planguage[0]} <br>`)
+        //push
+        planguage.push('java')
+        document.write(`${planguage} <br>`)
+       //pop
+       planguage.pop()
+       document.write(`${planguage} <br>`)
+       //unshift
+       planguage.unshift('java')
+       document.write(`${planguage} <br>`)
+       //shift
+       planguage.shift()
+       document.write(`${planguage} <br>`)
+       //slice
+       planguage.splice(3,1,'java')
+       document.write(`${planguage} <br>`)
+       // reverse
+       document.write(`${planguage.reverse()} <br>`)
+       // sort
+       document.write(`${planguage.sort()} <br>`)
+       document.write(`${planguage.reverse()} <br>`)
+
+
+    </script>
+</body>
+</html>
